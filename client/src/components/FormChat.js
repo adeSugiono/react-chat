@@ -23,17 +23,15 @@ export default class FormChat extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}><br></br>
+            <form onSubmit={this.handleSubmit}>
                 <div className="form-group row mt-20">
-                    <label className="col-sm-1 col-form-label">Image</label>
+                    <label className="col-sm-1 col-form-label"></label>
                     <div className="col-sm-11">
                         <input type="text" placeholder="your name" className="form-control" value={this.state.name} onChange={this.handleChangeName} /><br></br>
                         <textarea type="text" placeholder="write your chat here..." className="form-control" rows="4" value={this.state.chats} onChange={this.handleChangeChats} /><br></br>
                         <input className="btn btn-primary" type="submit" value="Post" />
                     </div>
                 </div>
-
-
             </form>
         )
     }
